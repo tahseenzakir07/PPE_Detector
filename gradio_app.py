@@ -3,7 +3,7 @@ import cv2
 from ultralytics import YOLO
 import tempfile
 
-model = YOLO(r"C:\Users\Tahseen Zakir\Downloads\best.pt")
+model = YOLO(r"best.pt")
 
 def process_video(video_file):
     if video_file is None:
