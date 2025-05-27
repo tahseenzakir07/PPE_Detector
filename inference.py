@@ -1,11 +1,9 @@
 from ultralytics import YOLO
 import cv2
 
-# Load your trained model
-model = YOLO(r"C:\Users\Tahseen Zakir\Downloads\best.pt")
+model = YOLO(r"best.pt")
 
-# Open webcam (0) or replace with video file
-cap = cv2.VideoCapture(r"C:\Users\Tahseen Zakir\Downloads\PPE_Part1.mp4")  # or use 0 for webcam
+cap = cv2.VideoCapture(r"video_file")  
 
 while cap.isOpened():
     success, frame = cap.read()
